@@ -12,6 +12,14 @@ describe('Fizzbuzz', function() {
       expect(fizzbuzz.isDivisibleByThree(3)).toBe(true);
     });
 
+    it('isn\'t divisible by 3', function(){
+      expect(fizzbuzz.isDivisibleByThree(4)).toBe(false);
+    });
+
+    it('is divisible by 5', function() {
+      expect(fizzbuzz.isDivisibleByFive(5)).toBe(true);
+    });
+
   });
 
 });
